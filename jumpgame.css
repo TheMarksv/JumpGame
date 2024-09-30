@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.filtered-image {
+    mix-blend-mode: hard-light;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.game {
+    width: 750px;
+    height: 200px;
+    border: 1px solid white;
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative ;
+    top: 150px;
+}
+
+animate{
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {top: 150px;}
+    30% {top: 100px;}
+    70% {top: 100px;}
+    100%{top: 150px;}
+}
+
+#block {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 3s infinite linear;
+}
+
+@keyframes block {
+    0% {left: 750px;}
+    100% { left: -20px;}
+}
+
+p {
+    text-align: center;
+    color: aqua;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
