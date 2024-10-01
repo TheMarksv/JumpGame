@@ -15,3 +15,16 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- Parte para adcionar menu de pause ao JumpGame -->
+
+<div id ="PauseMenu"  class ="hidden">
+    <button> onclick = "ResumeGame()"> Continuar</button>
+    <button> onclick = "RestartGame()"> Reiniciar</button>
+    <button> onclick = "QuitGame()"> Sair</button>
+</div>
+
+<!--Parte configurada para adcionar os obstaculos oa jogo-->
+<div id="gameArea" style="position: relative; width: 800px; height: 400px; border: 1px solid black;">
+    <div id="player" style="position: absolute; bottom: 0; left: 100px; width: 50px; height: 50px; background-color: orange;"></div>
+</div>
+
