@@ -33,7 +33,7 @@ function RestarGame() {
 function Quitgame() {
        // Lógica para sair do jogo
 }
-
+git rm <pause.js>
 // Exemplo de como chamar a função de pausa com uma tecla
 document.addEventListener('keydown', function(event) {
     if ( event.key === 'Escape') {
